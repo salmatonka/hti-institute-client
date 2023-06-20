@@ -1,0 +1,93 @@
+/* .according{
+    height: 50px;
+    width: 100%;
+    background: #f2f1f8;
+    color: #44425a;
+    padding-left: 24px;
+    cursor: pointer;
+    margin-bottom: 14px;
+} */
+
+
+
+
+.event-container{
+    display: flex;
+    width: 100%;
+    /* margin-top: 58px; */
+}
+.event-date{
+    text-align: center;
+    padding-top: 10px;
+    width: 63px;
+    height: 63px;
+    background: #FF6600;
+    margin-right: 30px;
+}
+.event-day{
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 0.75;
+}
+.event-month{
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.75;
+    margin-top: 10px;
+}
+.event-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: #44425a;
+}
+.event-subTitle{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c6a74;
+    margin-top: 5px;
+}
+
+/* news-day */
+.news-date{
+    text-align: center;
+    padding-top: 20px;
+    width: 63px;
+    height: 63px;
+    background: #FF6600;
+    margin-right: 25px;
+}
+.news-day{
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 0.75;
+}
+.news-post-body{
+    padding-left: 25px;
+}
+.news-post-date{
+    font-size: 12px;
+    font-weight: 600;
+    color: #ff5c00;
+    line-height: 0.75;
+
+}
+.news-post-title{
+    margin-top: 10px;
+}
+.news-post-title a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #44425a;
+}
+.news-post-title:hover{
+    color: #ff5c00;
+}
+.news-post-subTitle{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c6a74;
+}
+

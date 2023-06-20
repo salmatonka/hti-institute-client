@@ -1,0 +1,26 @@
+.top-bar{
+   width: 100%;
+}
+
+.btn-nav{
+   height: 31px;
+   background: #FF6600 ;
+   color: #FFFFFF;
+   padding-left: 20px;
+   padding-right: 20px;
+   line-height: 31px;
+   font-size: 14px;
+   font-weight: 400;
+}
+.btn-nav:hover{
+   height: 31px;
+   color: #FF6600 ;
+   background: #2C2B31;
+
+}
+@media only screen and (max-width: 767px) {
+   .top-bar{
+      display: none;
+   }
+}
+

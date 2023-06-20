@@ -1,0 +1,43 @@
+.milestone{
+    /* width: 100%; */
+    height: 80%;
+    /* padding-top: 156px;
+    padding-bottom: 161px; */
+}
+/* .milestone-container{
+    height: 40%;
+} */
+.milestone-counter{
+    font-size: 48px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 0.75;
+    margin-top: 37px;
+}
+
+.counter-text{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 21px;
+    line-height: 0.75;
+}
+
+.milestone-icons{
+    height: 81px;
+    width: 81px;
+}
+.milestone-text h3{
+    font-size: 48px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 0.75;
+    margin-top: 37px;
+}
+.milestone-text p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 21px;
+    line-height: 0.75;
+}

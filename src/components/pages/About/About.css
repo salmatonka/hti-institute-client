@@ -1,0 +1,42 @@
+.about-title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #44425a;
+}
+.about-text{
+    margin-top: 61px;
+}
+.about-title p{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* margin: 16px; */
+    font-size: 16px;
+    line-height: 2.14;
+    font-weight: 500;
+    color: #6c6a74;
+    /* margin-top: 61px; */
+}
+.meet-body {
+    text-align: center;
+    padding-top: 43px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+}
+.meet-title a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #44425a;
+}
+.meet-social { 
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center;
+    text-align: center;
+     padding-bottom: 47px; */
+     /* margin-right: 10px;  */
+}
+
+.meet-social ul li a{ 
+    font-size: 16px;
+    color: #ff6600;
+}
