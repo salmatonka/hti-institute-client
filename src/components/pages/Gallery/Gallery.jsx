@@ -51,10 +51,7 @@ const Gallery = () => {
       id: 12,
       img: 'https://www.bdhti.com/hadmin/upload/boishak.jpg'
     }
-    // {
-    //   id: 13,
-    //   img: 'https://www.bdhti.com/hadmin/upload/certificate-2.jpg'
-    // },
+    
 
   ]
   return (
@@ -66,7 +63,7 @@ const Gallery = () => {
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Gallery</h1>
-            <p className="mb-5"><a style={{color: '#ffffff', fontSize: '12px', fontWeight: 600}} href="index.php">Home /</a> <span>Gallery</span>
+            <p className="mb-5"><a style={{color: '#ffffff', fontSize: '12px', fontWeight: 600}} href="index.php">Home /</a> <span style={{color: '#ff8a00', fontSize: '12px', fontWeight: 600}}>Gallery</span>
             </p>
 
           </div>

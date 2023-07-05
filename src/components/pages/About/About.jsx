@@ -14,7 +14,7 @@ const About = () => {
                     <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
                             <h1 className="mb-5 text-5xl font-bold">About us</h1>
-                            <p className="mb-5">Home / <span>About us</span>
+                            <p className="mb-5"><a style={{color: '#ffffff', fontSize: '12px', fontWeight: 600}} href="index.php">Home /</a> <span style={{color: '#ff8a00', fontSize: '12px', fontWeight: 600}}>About us</span>
                             </p>
 
                         </div>

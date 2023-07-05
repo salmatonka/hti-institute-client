@@ -1,0 +1,124 @@
+ .research-htag{
+    font-size: 36px;
+    font-weight: 700;
+    color: #44425a;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    
+} 
+.side-container {
+    margin-left: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.left-side{
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-top: 63px;
+    padding-right: 50px;
+    padding-bottom: 41px;
+    background: #f2f1f8;
+}
+.right-side{
+    margin-top: 50px;
+    background: #f2f1f8;
+}
+.featured-tag{
+    height: 31px;
+    background: #ff6600;
+}
+.featured-tag  a{
+    padding-left: 21px;
+    padding-right: 21px;
+    line-height: 31px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.featured-price {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 500;
+}
+.featured-price span{
+    line-height: 1.5;
+    font-size: 18px;
+    color: #ff6600;
+}
+.featured-title{
+    margin-top: 29px;
+}
+.featured-title h3 a{
+    color: #2c2b31;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+.featured-text p{
+    margin-top: 18px;
+    line-height: 1.95;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c6a74;
+}
+.featured-course{
+    text-align: end;
+}
+.featured-course span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c6a74;
+    
+}
+
+
+
+
+/* @media only screen and (max-width: 575px){
+    .research-container{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+} */
+
+/* @media only screen and (max-width: 991px){
+    .research-img {
+        height: 354px;
+    }
+} */
+@media only screen and (max-width: 575px){
+    .research-htag{
+        font-size: 20px;
+        
+        
+    }
+}
+@media only screen and (max-width: 575px)
+{
+    .side-container {
+        margin-left: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .right-side{
+        margin-top: 0;
+        background: #f2f1f8;
+    }
+}
+
+
+
+
+
+
+
+
+
+

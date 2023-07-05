@@ -59,6 +59,7 @@ const ChooseCourse = () => {
 
           <div className="card-title">
           <h3><a href="module/wd-202">Web Development with PHP</a></h3>
+          
           </div>
           <br />
           <br />
@@ -66,6 +67,7 @@ const ChooseCourse = () => {
           <div className="card-course">
             <span>Course Duration: 3Months</span>
           </div>
+          
         </div>
       </div>
     </div>

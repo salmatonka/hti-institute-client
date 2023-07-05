@@ -3,8 +3,9 @@ import ChooseCourse from '../ChooseCourse/ChooseCourse';
 import ChooseEventsNews from '../ChooseEventsNews/ChooseEventsNews';
 import VideoSection from '../VideoSection/VideoSection';
 import Milestones from '../Milestones/Milestones';
-import CorporatePartner from '../CorporatePartner/CorporatePartner';
+
 import HomeBanner from '../HomeBanner/HomeBanner';
+import CorporatePartnerCards from '../CorporatePartner/CorporatePartnerCards';
 
 
 const Home = () => {
@@ -12,10 +13,10 @@ const Home = () => {
         <div>
             <HomeBanner />
             <ChooseEventsNews />
-           {/* <ChooseCourse /> */}
+           <ChooseCourse />
            <Milestones />
            {/* <VideoSection /> */}
-           <CorporatePartner />
+           <CorporatePartnerCards />
         </div>
     );
 };

@@ -11,12 +11,13 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 
-const CorporatePartner = () => {
+const CorporatePartner = ({corporate }) => {
+console.log(corporate )
     return (
         <div>
             <div className="px-24" >
   <div>
- <h2 style={{fontSize: '20px',fontWeight: 600,color: '#44425a'}}>Choose your course</h2>
+ 
   </div>
       <Swiper
         slidesPerView={3}
@@ -35,8 +36,8 @@ const CorporatePartner = () => {
         <SwiperSlide>
         <div>
       <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://www.bdhti.com/hadmin/upload/web_development.jpg" alt="php" /></figure>
-        <div className="card-body">
+        <figure><img src={corporate.img} alt="php" /></figure>
+        {/* <div className="card-body">
           <div className="card-tag">
             <div>
               <h2 >
@@ -56,142 +57,12 @@ const CorporatePartner = () => {
           <div className="card-course">
             <span>Course Duration: 3Months</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://www.bdhti.com/hadmin/upload/web_development.jpg" alt="php" /></figure>
-        <div className="card-body">
-          <div className="card-tag">
-            <div>
-              <h2 >
-                <a href="#">ONGOING</a></h2>
-            </div>
-            <div className="card-price">
-              BDT: <span>14000</span>
-            </div>
-          </div>
-
-          <div className="card-title">
-          <h3><a href="module/wd-202">Web Development with PHP</a></h3>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div className="card-course">
-            <span>Course Duration: 3Months</span>
-          </div>
-        </div>
-      </div>
-    </div>
-        </SwiperSlide>
-        <SwiperSlide><div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://www.bdhti.com/hadmin/upload/web_development.jpg" alt="php" /></figure>
-        <div className="card-body">
-          <div className="card-tag">
-            <div>
-              <h2 >
-                <a href="#">ONGOING</a></h2>
-            </div>
-            <div className="card-price">
-              BDT: <span>14000</span>
-            </div>
-          </div>
-
-          <div className="card-title">
-          <h3><a href="module/wd-202">Web Development with PHP</a></h3>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div className="card-course">
-            <span>Course Duration: 3Months</span>
-          </div>
-        </div>
-      </div>
-    </div></SwiperSlide>
-        <SwiperSlide><div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://www.bdhti.com/hadmin/upload/web_development.jpg" alt="php" /></figure>
-        <div className="card-body">
-          <div className="card-tag">
-            <div>
-              <h2 >
-                <a href="#">ONGOING</a></h2>
-            </div>
-            <div className="card-price">
-              BDT: <span>14000</span>
-            </div>
-          </div>
-
-          <div className="card-title">
-          <h3><a href="module/wd-202">Web Development with PHP</a></h3>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div className="card-course">
-            <span>Course Duration: 3Months</span>
-          </div>
-        </div>
-      </div>
-    </div></SwiperSlide>
-        <SwiperSlide><div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://www.bdhti.com/hadmin/upload/web_development.jpg" alt="php" /></figure>
-        <div className="card-body">
-          <div className="card-tag">
-            <div>
-              <h2 >
-                <a href="#">ONGOING</a></h2>
-            </div>
-            <div className="card-price">
-              BDT: <span>14000</span>
-            </div>
-          </div>
-
-          <div className="card-title">
-          <h3><a href="module/wd-202">Web Development with PHP</a></h3>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div className="card-course">
-            <span>Course Duration: 3Months</span>
-          </div>
-        </div>
-      </div>
-    </div></SwiperSlide>
-        <SwiperSlide><div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://www.bdhti.com/hadmin/upload/web_development.jpg" alt="php" /></figure>
-        <div className="card-body">
-          <div className="card-tag">
-            <div>
-              <h2 >
-                <a href="#">ONGOING</a></h2>
-            </div>
-            <div className="card-price">
-              BDT: <span>14000</span>
-            </div>
-          </div>
-
-          <div className="card-title">
-          <h3><a href="module/wd-202">Web Development with PHP</a></h3>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div className="card-course">
-            <span>Course Duration: 3Months</span>
-          </div>
-        </div>
-      </div>
-    </div></SwiperSlide>
+    </SwiperSlide>
+        
+        
        
       </Swiper>
     </div>
