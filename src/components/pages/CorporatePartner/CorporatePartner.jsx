@@ -15,6 +15,12 @@ const CorporatePartner = ({corporate }) => {
 console.log(corporate )
     return (
         <div>
+          <h2 style={{fontSize: '36px',
+    fontWeight: 700,
+    color: '#44425a',
+    textAlign: 'center',
+    marginTop:'60px',
+    marginBottom: '60px',}}>Our Corporate Partner</h2>
             <div className="px-24" >
   <div>
  
@@ -35,35 +41,61 @@ console.log(corporate )
       >
         <SwiperSlide>
         <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src={corporate.img} alt="php" /></figure>
-        {/* <div className="card-body">
-          <div className="card-tag">
-            <div>
-              <h2 >
-                <a href="#">ONGOING</a></h2>
-            </div>
-            <div className="card-price">
-              BDT: <span>14000</span>
-            </div>
-          </div>
-
-          <div className="card-title">
-          <h3><a href="module/wd-202">Web Development with PHP</a></h3>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div className="card-course">
-            <span>Course Duration: 3Months</span>
-          </div>
-        </div> */}
+      <div className="">
+        <img src='https://www.bdhti.com/hadmin/upload/bteb.jpg' alt="php" />
       </div>
     </div>
     </SwiperSlide>
-        
-        
-       
+        <SwiperSlide>
+        <div>
+      <div className="">
+        <img src='https://www.bdhti.com/hadmin/upload/BU.jpg' alt="php" />
+      </div>
+    </div>
+    </SwiperSlide>
+        <SwiperSlide>
+        <div>
+      <div className="">
+        <img src='https://www.bdhti.com/hadmin/upload/kgsc.jpg' alt="php" />
+      </div>
+    </div>
+    </SwiperSlide>
+        <SwiperSlide>
+        <div>
+      <div className="">
+        <img src='https://www.bdhti.com/hadmin/upload/lalmatia.jpg' alt="php" />
+      </div>
+    </div>
+    </SwiperSlide>
+        <SwiperSlide>
+        <div>
+      <div className="">
+        <img src='https://www.bdhti.com/hadmin/upload/queens-school.jpg' alt="php" />
+      </div>
+    </div>
+    </SwiperSlide>
+        <SwiperSlide>
+        <div>
+      <div className="">
+        <img src='https://www.bdhti.com/hadmin/upload/shadow.jpg' alt="php" />
+      </div>
+    </div>
+    </SwiperSlide>
+        <SwiperSlide>
+        <div>
+      <div className="">
+        <img src='https://www.bdhti.com/hadmin/upload/asa.jpg' alt="php" />
+      </div>
+    </div>
+    </SwiperSlide>
+        <SwiperSlide>
+        <div>
+      <div className="">
+        <img src='https://www.bdhti.com/hadmin/upload/bangabondhu.jpg' alt="php" />
+      </div>
+    </div>
+    </SwiperSlide>
+      
       </Swiper>
     </div>
         </div>

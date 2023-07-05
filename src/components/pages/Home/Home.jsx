@@ -5,7 +5,8 @@ import VideoSection from '../VideoSection/VideoSection';
 import Milestones from '../Milestones/Milestones';
 
 import HomeBanner from '../HomeBanner/HomeBanner';
-import CorporatePartnerCards from '../CorporatePartner/CorporatePartnerCards';
+
+import CorporatePartner from '../CorporatePartner/CorporatePartner';
 
 
 const Home = () => {
@@ -15,8 +16,8 @@ const Home = () => {
             <ChooseEventsNews />
            <ChooseCourse />
            <Milestones />
-           {/* <VideoSection /> */}
-           <CorporatePartnerCards />
+           <VideoSection />
+           <CorporatePartner />
         </div>
     );
 };
