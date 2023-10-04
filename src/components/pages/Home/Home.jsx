@@ -7,12 +7,14 @@ import Milestones from '../Milestones/Milestones';
 import HomeBanner from '../HomeBanner/HomeBanner';
 
 import CorporatePartner from '../CorporatePartner/CorporatePartner';
+import ServiceCards from '../../shares/ServiceCards/ServiceCards';
 
 
 const Home = () => {
     return (
         <div>
             <HomeBanner />
+            <ServiceCards />
             <ChooseEventsNews />
            <ChooseCourse />
            <Milestones />

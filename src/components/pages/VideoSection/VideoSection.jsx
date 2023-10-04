@@ -16,7 +16,7 @@ const VideoSection = () => {
   Your browser does not support HTML video.
 </video> */}
 
-<video id="my_video" width="100%" height="auto" alt="your browser is not support this video" controls>
+<video className='px-24 py-20' id="my_video" width="100%" height="auto" alt="your browser is not support this video" controls>
   <source src="https://www.bdhti.com/video/video.mp4" type="video/mp4" />
   <source src="movie.ogg" type="video/ogg" />
   Your browser does not support the video tag.

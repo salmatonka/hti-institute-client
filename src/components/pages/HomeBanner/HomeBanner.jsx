@@ -30,13 +30,13 @@ const HomeBanner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-            <img src="https://www.bdhti.com/images/milestones.jpg" alt="" />
+            <img src="https://www.bdhti.com/hadmin/upload/slider-2.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://www.bdhti.com/images/milestones.jpg" alt="" />
+        <img src="https://www.bdhti.com/hadmin/upload/slider-3.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://www.bdhti.com/images/milestones.jpg" alt="" />
+        <img src="https://www.bdhti.com/hadmin/upload/slider-1.jpg" alt="" />
         </SwiperSlide>
         
       </Swiper>

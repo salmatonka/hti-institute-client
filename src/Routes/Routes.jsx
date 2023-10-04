@@ -6,6 +6,9 @@ import Contact from "../components/pages/Contact/Contact";
 import About from "../components/pages/About/About";
 import Gallery from "../components/pages/Gallery/Gallery";
 import Courses from "../components/pages/Courses/Courses";
+import ServiceCards from "../components/shares/ServiceCards/ServiceCards";
+import Register from "../components/Form/Register/Register";
+import LogIn from "../components/Form/LogIn/LogIn";
 
 const routes = createBrowserRouter([
     {
@@ -31,7 +34,20 @@ const routes = createBrowserRouter([
             {
                 path:'/courses',
                 element:<Courses />
-            }
+            },
+            {
+                path:'/serviceCards',
+                element:<ServiceCards />
+            },
+            {
+                path:'/signUp',
+                element:<Register />
+            },
+            {
+                path:'//login',
+                element:<LogIn />
+            },
+           
         ]
 
     }

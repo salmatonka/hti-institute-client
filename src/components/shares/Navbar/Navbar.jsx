@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { BiSearch } from 'react-icons/bi';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
+import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
+import { toast } from 'react-toastify';
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    return (
-        <div style={{backgroundColor:'#FFFFFF',width:'100%'}} class="">
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(toast.warning('user logged out!!'))
+      .catch(error => console.log(error))
+  }
+
+  console.log(user)
+  return (
+    <div style={{ backgroundColor: '#FFFFFF', width: '100%' }} class="">
       <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-14">
         <div class="nav-container relative flex items-center justify-between">
           <a
@@ -16,9 +28,9 @@ const Navbar = () => {
           >
             <img src="https://www.bdhti.com/images/logo.png" alt="" />
             <div className='logo-text '>
-            <span >
-              HTi IT Institute
-            </span>
+              <span >
+                HTi IT Institute
+              </span>
             </div>
           </a>
           <ul class="nav-link flex items-center hidden space-x-8 lg:flex">
@@ -27,7 +39,7 @@ const Navbar = () => {
                 to="/"
                 aria-label="Home"
                 title="Home"
-                className ={({isActive})=> isActive? 'active': undefined }
+                className={({ isActive }) => isActive ? 'active' : undefined}
               >
                 Home
               </NavLink>
@@ -37,9 +49,9 @@ const Navbar = () => {
                 to="/about"
                 aria-label="About us"
                 title="About us"
-                className ={({isActive})=> isActive? 'active': undefined }
+                className={({ isActive }) => isActive ? 'active' : undefined}
               >
-               About us
+                About us
               </NavLink>
             </li>
             <li>
@@ -47,9 +59,9 @@ const Navbar = () => {
                 to="/courses"
                 aria-label="Our Courses"
                 title="Our Courses"
-                className ={({isActive})=> isActive? 'active': undefined }
+                className={({ isActive }) => isActive ? 'active' : undefined}
               >
-               Courses
+                Courses
               </NavLink>
             </li>
             <li>
@@ -57,9 +69,9 @@ const Navbar = () => {
                 to="/event"
                 aria-label="Gallery"
                 title="Gallery"
-                className ={({isActive})=> isActive? 'active': undefined }
+                className={({ isActive }) => isActive ? 'active' : undefined}
               >
-              Gallery
+                Gallery
               </NavLink>
             </li>
             <li>
@@ -67,12 +79,52 @@ const Navbar = () => {
                 to="/contact"
                 aria-label="Contact us"
                 title="Contact us"
-                className ={({isActive})=> isActive? 'active': undefined }
+                className={({ isActive }) => isActive ? 'active' : undefined}
               >
-             Contact
+                Contact
               </NavLink>
             </li>
             <li>
+              <NavLink
+                to="/signUp"
+                aria-label="Register"
+                title="Register"
+                className={({ isActive }) => isActive ? 'active' : undefined}
+              >
+                Register
+              </NavLink>
+            </li>
+
+
+            {/* logOut */}
+            {
+              user?.email ?
+                <>
+                  <div className="flex ">
+                    <img alt="" className="w-6 h-8 rounded-full ri ri ri ri" src={user?.photoURL} />
+                    <button className='pl-2' onClick={handleLogOut} >LogOut</button>
+
+                  </div>
+
+
+                </>
+                :
+                <li>
+                  <NavLink
+                    to="/login"
+                    aria-label="Login"
+                    title="Login"
+                    className={({ isActive }) => isActive ? 'active' : undefined}
+                  >
+                    Login
+                  </NavLink>
+                </li>
+            }
+
+
+
+
+            {/* <li>
               <a
                 href="/"
                 aria-label="Sign up"
@@ -80,7 +132,7 @@ const Navbar = () => {
               >
                 < BiSearch/>
               </a>
-            </li>
+            </li> */}
           </ul>
           <div class="lg:hidden">
             <button
@@ -131,7 +183,7 @@ const Navbar = () => {
                           <rect x="14" y="11" width="7" height="12" />
                         </svg>
                         <span class="">
-                        HTi IT Institute
+                          HTi IT Institute
                         </span>
                       </a>
                     </div>
@@ -158,9 +210,9 @@ const Navbar = () => {
                           to="/"
                           aria-label=" Home"
                           title=" Home"
-                          className ={({isActive})=> isActive? 'active': undefined }
+                          className={({ isActive }) => isActive ? 'active' : undefined}
                         >
-                           Home
+                          Home
                         </NavLink>
                       </li>
                       <li>
@@ -168,7 +220,7 @@ const Navbar = () => {
                           to="/courses"
                           aria-label="Our Courses"
                           title="Our Courses"
-                          className ={({isActive})=> isActive? 'active': undefined }
+                          className={({ isActive }) => isActive ? 'active' : undefined}
                         >
                           Courses
                         </NavLink>
@@ -178,9 +230,9 @@ const Navbar = () => {
                           to="/event"
                           aria-label="Gallery"
                           title="Gallery"
-                          className ={({isActive})=> isActive? 'active': undefined }
+                          className={({ isActive }) => isActive ? 'active' : undefined}
                         >
-                         Gallery
+                          Gallery
                         </NavLink>
                       </li>
                       <li>
@@ -188,21 +240,51 @@ const Navbar = () => {
                           to="/contact"
                           aria-label="Contact us"
                           title="Contact us"
-                          className ={({isActive})=> isActive? 'active': undefined }
+                          className={({ isActive }) => isActive ? 'active' : undefined}
                         >
                           Contact
                         </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          class=" "
-                          aria-label="Sign up"
-                          title="Sign up"
+                        <NavLink
+                          to="/signUp"
+                          aria-label="Register"
+                          title="Register"
+                          className={({ isActive }) => isActive ? 'active' : undefined}
                         >
-                          <BiSearch />
-                        </a>
+                          Register
+                        </NavLink>
                       </li>
+
+
+
+
+                      {/* logOut */}
+                      {
+                        user?.email ?
+                          <>
+                            <div className="flex ">
+                              <img alt="" className="w-6 h-8 rounded-full ri ri ri ri" src={user?.photoURL} />
+                              <button className='pl-2' onClick={handleLogOut} >LogOut</button>
+
+                            </div>
+
+
+                          </>
+                          :
+                          <li>
+                            <NavLink
+                              to="/login"
+                              aria-label="Login"
+                              title="Login"
+                              className={({ isActive }) => isActive ? 'active' : undefined}
+                            >
+                              Login
+                            </NavLink>
+                          </li>
+                      }
+
+
                     </ul>
                   </nav>
                 </div>
@@ -212,7 +294,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Navbar;

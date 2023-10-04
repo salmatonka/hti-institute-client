@@ -7,7 +7,7 @@ import TopBar from '../components/shares/TopBar/TopBar';
 const Main = () => {
     return (
         <div>
-            <TopBar />
+             <TopBar /> 
             <Navbar />
             <Outlet />
             <Footer />
